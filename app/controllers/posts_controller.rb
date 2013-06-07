@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  
+  http_basic_authenticate_with :name => "root", :password => "root", :except => [:index, :show]
+  http_basic_authenticate_with :name => "root", :password => "root", :only => :destroy
+  
   # GET /posts
   # GET /posts.json
   def index
