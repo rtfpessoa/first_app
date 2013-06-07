@@ -18,7 +18,7 @@
 <p>
   <b>Tags:</b>
   <%= join_tags(@post) %>
-</p> 
+</p>
  
 <h2>Comments</h2>
 <%= render @post.comments %>
@@ -26,8 +26,6 @@
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>
  
-<br />
  
 <%= link_to 'Edit Post', edit_post_path(@post) %> |
 <%= link_to 'Back to Posts', posts_path %> |
-
